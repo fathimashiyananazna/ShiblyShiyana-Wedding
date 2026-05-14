@@ -1,0 +1,319 @@
+:root {
+    --gold: #c5a059;
+    --dark: #2c2c2c;
+    --cream: #fdfaf8;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Typography Overhaul */
+.section-title {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(253, 250, 248, 0.8), rgba(253, 250, 248, 0.8)), url('images/bg.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.names {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.and {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    display: block;
+    color: var(--gold);
+}
+
+.invite-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.image-frame {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.couple-image {
+    width: 100%;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+.countdown-timer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gold);
+    margin-top: 20px;
+}
+
+/* FAMILY DETAILS */
+.family-details {
+    padding: 100px 20px;
+    background-color: var(--white);
+}
+
+.family-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.family-card {
+    background: var(--cream);
+    padding: 40px;
+    width: 380px;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+}
+
+.role {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+}
+
+.person-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.card-divider {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.address-box {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.address-box .label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.wedding-schedule {
+    padding: 80px 20px;
+    background-color: #fdfaf8; /* Soft cream theme */
+    text-align: center;
+}
+
+.schedule-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-block {
+    flex: 1;
+}
+
+.schedule-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c5a059; /* Gold accent */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.schedule-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.schedule-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+/* Elegant Vertical Divider */
+.vertical-divider {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #c5a059, transparent);
+    opacity: 0.6;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .schedule-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .vertical-divider {
+        width: 60px;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #c5a059, transparent);
+    }
+    .schedule-value {
+        font-size: 1.8rem;
+    }
+}/* VENUE */
+.venue-centered {
+    padding: 120px 20px;
+    background-color: #fdfaf8; /* Matches your cream theme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.venue-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* Typography for the main venue focus */
+.celebration-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: #c5a059; /* Gold accent */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.venue-highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.8rem; /* Large and bold at the middle */
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin: 0 auto 15px;
+}
+
+.pin-accent {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Circular image styling */
+.venue-circle-frame {
+    width: 220px; /* Sizing it smaller as requested */
+    height: 220px;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.venue-circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button Grouping */
+.venue-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.elegant-btn {
+    padding: 15px 30px;
+    border: 1px solid #c5a059;
+    background: transparent;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.elegant-btn:hover {
+    background: #c5a059;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .venue-highlight {
+        font-size: 2.5rem;
+    }
+    .venue-circle-frame {
+        width: 180px;
+        height: 180px;
+    }
+    .venue-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
