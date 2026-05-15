@@ -39,20 +39,37 @@ body {
     text-align: center;
 }
 
+/* CLASSY CURSIVE NAMES */
 .names {
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-family: 'Great Vibes', cursive !important; /* This forces the cursive font */
+    font-size: 5.5rem !important;
+    font-weight: 400 !important;
+    color: #1a1a1a;
+    text-transform: none !important; /* Cursive looks best without all-caps */
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 
+/* ATTRACTIVE '&' SYMBOL */
 .and {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 3rem !important;
+    color: #c5a059; /* Elegant gold color */
     display: block;
-    color: var(--gold);
+    margin: -10px 0;
 }
-
+/* REFINED SECOND NAME (Optional: for perfect balance) */
+.names:last-of-type {
+    margin-top: -10px;
+}
+@media (max-width: 768px) {
+    .names {
+        font-size: 3.5rem;
+    }
+    .and {
+        font-size: 1.8rem;
+    }
+}
 .invite-text {
     font-size: 1.2rem;
     letter-spacing: 2px;
